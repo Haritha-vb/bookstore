@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookstore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-image: url('https://daily.sevenfifty.com/app/uploads/2017/12/SFD_Bookstore_Bars_Kramerbooks_CR_courtesy_Kramerbooks_2520x14202.jpg');
+            background-size: cover;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            background-position: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .book-item {
+            background-color: #e0e0e0;
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .book-item img {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .book-item h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .book-item p {
+            font-size: 1em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Background Image -->
+    <header>
+        <h1>Welcome to My Bookstore</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#catalog">Catalog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h2>Home</h2>
+            <p>Welcome to My Bookstore, your one-stop shop for the latest books, bestsellers, and classic literature. Explore our catalog and find your next great read today!</p>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="catalog">
+        <div class="container">
+            <h2>Our Book Catalog</h2>
+            <p>Browse through our collection of books across various genres including fiction, non-fiction, fantasy, and more.</p>
+            <div class="book-list">
+                <!-- Book 1 -->
+                <div class="book-item">
+                    <img src="https://via.placeholder.com/150x200?text=Book+1" alt="Book 1">
+                    <h3>Book Title 1</h3>
+                    <p>Author: John Doe</p>
+                    <p>$19.99</p>
+                </div>
+                <!-- Book 2 -->
+                <div class="book-item">
+                    <img src="https://via.placeholder.com/150x200?text=Book+2" alt="Book 2">
+                    <h3>Book Title 2</h3>
+                    <p>Author: Jane Smith</p>
+                    <p>$15.99</p>
+                </div>
+                <!-- Book 3 -->
+                <div class="book-item">
+                    <img src="https://via.placeholder.com/150x200?text=Book+3" alt="Book 3">
+                    <h3>Book Title 3</h3>
+                    <p>Author: Mark Lee</p>
+                    <p>$25.99</p>
+                </div>
+                <!-- Add more books here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At My Bookstore, we believe in the power of books to inspire, inform, and entertain. Whether you're looking for the latest bestsellers, timeless classics, or niche genres, we have something for every reader.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have a question? Get in touch with us!</p>
+            <p>Email: <a href="mailto:info@mybookstore.com">info@mybookstore.com</a></p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Visit our store at: 123 Book St., Booktown, BK 12345</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Bookstore. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
